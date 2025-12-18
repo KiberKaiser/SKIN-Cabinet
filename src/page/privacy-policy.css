@@ -1,0 +1,134 @@
+.privacy-policy-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 80px 20px 40px;
+}
+
+.privacy-policy-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-policy-content h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.privacy-policy-content h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.policy-section {
+  margin-bottom: 35px;
+}
+
+.policy-section h2 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-left: 4px solid #667eea;
+  padding-left: 15px;
+}
+
+.policy-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.policy-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.policy-section ul li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.policy-section ul li::before {
+  content: '•';
+  color: #667eea;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 10px;
+  top: -2px;
+}
+
+.policy-section a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.policy-section a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacy-policy-container {
+    padding: 60px 15px 30px;
+  }
+
+  .privacy-policy-content {
+    padding: 30px 20px;
+  }
+
+  .privacy-policy-content h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .policy-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .policy-section p,
+  .policy-section ul li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-policy-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .policy-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .policy-section p,
+  .policy-section ul li {
+    font-size: 0.9rem;
+  }
+}
